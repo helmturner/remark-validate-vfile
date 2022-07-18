@@ -45,7 +45,7 @@ export type Assertion = (file: VFile) => unknown;
  * If no assertions are configured, does nothing.
  * @param settings The settings object passed to the remark-validate plugin
  */
-const remarkValidateVFile: Plugin<[Options|null]> = function (
+const remarkValidateVFile: Plugin<[(Options | undefined | void)?]> = function (
   this,
   settings
 ) {

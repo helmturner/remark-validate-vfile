@@ -36,6 +36,6 @@ export declare type Assertion = (file: VFile) => unknown;
  * If no assertions are configured, does nothing.
  * @param settings The settings object passed to the remark-validate plugin
  */
-declare const remarkValidateVFile: Plugin<[Options | null]>;
+declare const remarkValidateVFile: Plugin<[(Options | undefined | void)?]>;
 export default remarkValidateVFile;
 //# sourceMappingURL=index.d.ts.map
